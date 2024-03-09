@@ -1,0 +1,132 @@
+
+header {
+    padding-top: 20px;
+    width: 940px;
+    grid-row: 1;
+    display: inline-flex;
+    justify-content: space-between;
+    font-family: var(--font-arial);
+    color: var(--p-gray);
+    min-height: 60px;
+
+    #dark {
+        padding-top: 20px;
+        width: 25px;
+        height: 25px;
+        img {
+            width: 100%;
+        }
+    }
+
+    #menu {
+        padding-top: 20px;
+        width: 25px;
+        display: none;
+        img {
+            width: 100%;
+        }
+    }
+
+    #logo {
+    
+        span {
+            color: var(--default-gray);
+            font-size: var(--title-size);
+            font-weight: 400;
+
+            span {
+                color: var(--font-orange);
+
+            }
+        
+        } 
+
+        & > img {
+            position: relative;
+            left: -150px;
+            top: -5px;
+        }
+
+    }
+
+    nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 20px;
+
+        ul {
+
+            li {
+                display: inline;
+                margin-right: 14px;
+                font-size: 12px;
+                padding: 5px 13px;
+
+                &:hover {
+                    width: 79px;
+                    height: 27px;
+                    border-radius: 2px;
+                    background-image: linear-gradient(0deg, #ef9f46 0%, #f3ab5b 50%, #f4cfa7 100%);
+                    outline: 1px solid #675f55;
+                    color: white;
+                    padding: 5px 13px;
+
+                    a {
+                        color: white;
+                        text-decoration: none;
+                    }
+                }
+            
+                &:last-child {
+                    margin-right: 0;
+                }
+
+                a {
+                    text-decoration: none;
+                    color: var(--title-color);
+                }
+
+                
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    header {
+        margin-bottom: 50px;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        nav {
+            display: none;
+            order: 10;
+            width: 100%;
+            justify-content: flex-start;
+
+            ul {            
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    padding: 10px;
+                    font-size: 20px;
+                    margin-bottom: 15px;
+                }
+
+                li:hover {
+                    width: auto;
+                }
+
+            } 
+
+        }
+
+        #menu {
+            display: block;
+            margin-right: 5%;
+        }
+    }
+}

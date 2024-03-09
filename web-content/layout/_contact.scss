@@ -1,0 +1,182 @@
+#contactpage {
+
+    header {
+        margin-bottom: 40px;
+    }
+
+    main {
+        border-radius: 15px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: var(--main-color);
+        max-width: 940px;
+
+        #contact {
+            margin-right: 20px;
+
+            &>div {
+                display: flex;
+            }
+
+            h1 {
+                font-size: var(--font-size-2);
+                color: var(--font-orange);
+                font-family: var(--font-family);
+                border-bottom: 1px solid var(--border-color-3);
+                font-weight: normal;
+                margin: 10px;
+                padding: 5px;
+
+                img {
+                    width: 40px;
+                }
+
+            }
+
+            p {
+                font-size: var(--font-size-7);
+                line-height: 18px;
+                color: var(--p-gray);
+                font-family: "Arial";
+                margin-bottom: 15px;
+            }
+
+            form {
+
+                div {
+
+                    margin-bottom: 15px;
+
+                    label {
+                        display: inline-block;
+                        width: 100px;
+                        font-size: var(--font-size-7);
+                        line-height: 18px;
+                        color: var(--p-gray);
+                        font-weight: bold;
+                        font-family: var(--font-arial);
+                    }
+
+                    input {
+                        width: 360px;
+                        height: 26px;
+                        background-color: var(--input-background-light-gray);
+                        border: 1px solid var(--border-color-1);
+                    }
+
+                }
+
+            }
+
+            #message {
+                width: 422px;
+                height: 92px;
+                background-color: var(--input-background-light-gray);
+                border: 1px solid var(--border-color-1);
+            }
+
+            #send {
+                margin-top: 20px;
+                margin-right: 10px;
+                font-size: var(--font-size-7);
+                padding-top: 4px;
+                display: block;
+                width: 91px;
+                height: 20px;
+                color: var(--p-gray);
+                border-radius: 11px;
+                background-image: linear-gradient(0deg, #d4d3d3 0%, #e9e9e9 100%);
+                border: 1px solid var(--border-color-2);
+                text-align: center;
+                text-decoration: none;
+            }
+        }
+
+        #touch_form {
+
+            h3 {
+                font-size: var(--font-size-3-0);
+                color: var(--font-orange);
+                font-family: var(--font-family);
+                border-bottom: 1px solid var(--border-color-3);
+                font-weight: normal;
+                margin: 10px 0;
+                padding: 10px 0;
+            }
+
+            li {
+                margin-left: 15px;
+                list-style-type: disc;
+                font-size: var(--font-size-7);
+                line-height: 18px;
+                color: var(--p-gray);
+                font-family: "Arial";
+            }
+
+            li::marker {
+                color: var(--font-orange);
+            }
+
+        }
+
+    }
+
+    @media screen and (min-width: 1025px) {
+
+        main {
+            width: 100%;
+
+            #contact {
+                margin: 0 10px;
+                padding-bottom: 330px;
+
+                #formulari {
+
+                    div:nth-child(5) {
+
+                        label {
+                            position: relative;
+                            top: -80px;
+                        }
+                    }
+
+                    #send {
+                        margin-left: 105px;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+    header {
+        width: 100%;
+    }
+
+    main {
+        width: 100%;
+
+        #contact {
+
+            form {
+                #message {
+                    max-width: 300px;
+                }
+
+                #send {
+                    margin-left: 105px;
+                }
+
+            }
+
+        }
+
+    }
+
+}

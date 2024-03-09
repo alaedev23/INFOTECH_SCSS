@@ -1,0 +1,102 @@
+footer {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--default-gray);
+    padding: 10px 0;
+
+    nav {
+
+        ul {
+            padding: 0;
+            li {
+                display: inline;
+                color: var(--default-gray);
+                padding-right: 5px;
+                margin-left: 5px;
+                border-right: 1px solid var(--border-color-3);
+                font-size: 12px;
+                line-height: 18px;
+                color: var(--default-gray);
+                font-family: var(--font-arial);
+            }
+
+            li:last-child {
+                border-right: none;
+            }
+        }
+    }
+
+    span {
+        display: flex;
+        justify-content: flex-end;
+        color: var(--default-gray);
+        font-size: 14px;
+
+        a {
+            color: var(--font-orange);
+            margin: 0px 5px;
+        }
+
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        grid-column: 1 / span 6;
+
+        nav {
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        span {
+            grid-column: 2;
+            grid-row: 1;
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    footer {
+        display: grid;
+        margin: 0 15px;
+
+        grid-column: 1 / span 2;
+
+        nav {
+            grid-column: 1 / span 2;
+            grid-row: 1;
+            margin-bottom: 10px;
+
+            ul {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+
+                li  {
+                    padding-right: 5%;
+                }
+
+                li:last-child {
+                    border-right: none;
+                }
+            }
+
+        }
+
+        span {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            grid-column: 1 / span 2;
+            grid-row: 2;
+        }
+    }
+}

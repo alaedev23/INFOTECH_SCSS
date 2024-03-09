@@ -1,0 +1,63 @@
+
+:root {
+
+    --font-family: 'Century Gothic';
+    --font-arial: 'Arial';
+    
+    --title-size: 45px;
+    --font-size-1: 27px;
+    --font-size-2: 22px;
+    --font-size-3: 20px;
+    --font-size-3-0: 19px;
+    --font-size-3-5: 18px;
+    --font-size-5: 14px;
+    --font-size-6: 13px;
+    --font-size-7: 12px;
+
+    &.light {
+        --main-bg-color: linear-gradient(180deg, rgba(228,228,228,1) 0%, rgba(253,253,253,1) 100%);
+        
+        --light-gray: #bcbcbc;
+        --p-gray: #9a9b9c;
+        --p2-gray: #7e7e7e;
+        --default-gray: #666565;
+        --font-dark-gray: #363d40;
+        --main-color: #fff;
+        --h2-gray: linear-gradient(0deg, #eaeaea 0%, #eeeeee 100%);
+
+        --border-color-1: #dddddd;
+        --border-color-2: #c6c6c6;
+        --border-color-3: #e4e4e4;
+        --border-color-4: #e1e0e0;
+        --border-color-5: #e5e6e5;
+
+        --input-background-light-gray: #eeefef;
+
+        --font-orange: #ec8a1b;
+        --font-dark-orange: #ee902e;
+    }
+
+    &.dark {
+
+        --main-bg-color: linear-gradient(180deg, rgba(50, 50, 50, 1) 0%, rgba(0, 0, 0, 1) 100%);
+
+        --light-gray: #363d40;
+        --p-gray: #666565;
+        --p2-gray: #5e5e5e;
+        --default-gray: #9a9b9c;
+        --font-dark-gray: #bcbcbc;
+        --main-color: #363d40;
+        --h2-gray: linear-gradient(0deg, #333 0%, #555555 100%);
+    
+        --border-color-1: #dddddd;
+        --border-color-2: #c6c6c6;
+        --border-color-3: #e4e4e4;
+        --border-color-4: #e1e0e0;
+        --border-color-5: #e5e6e5;
+    
+        --input-background-light-gray: #eeefef;
+    
+        --font-orange: #ec8a1b;
+        --font-dark-orange: #ee902e;
+    }
+}

@@ -1,0 +1,126 @@
+#client-page {
+
+    margin: 0 auto;
+
+    main {
+        border-radius: 15px;
+        padding: 10px;
+        margin: 0 auto;
+        background-color: var(--main-color);
+        max-width: 940px;
+
+        #clients {
+            margin-right: 20px;
+
+            #container-clients {
+                display: grid;
+                grid-auto-rows: auto;
+                grid-template-columns: repeat(4, 1fr);
+
+                div {
+                    grid-row: span 4;
+                    grid-column: span 2;
+                    margin-bottom: 70px;
+
+                    img {
+                        border: 11px solid var(--border-color-5);
+                        border-radius: 6px;
+                        width: 271px;
+                        height: 220px;
+                    }
+
+                    h5 {
+                        font-size: var(--font-size-7);
+                        color: #666666;
+                        font-weight: bold;
+                        font-family: var(--font-family);
+                        padding: 10px 0;
+                    }
+                }
+            }
+
+            h1 {
+                font-size: 22px;
+                color: var(--font-orange);
+                font-family: var(--font-family);
+                border-bottom: 1px solid var(--border-color-3);
+                font-weight: normal;
+                margin: 10px 0;
+                padding: 5px 0;
+
+                img {
+                    width: 30px;
+                }
+            }
+
+            p {
+                font-size: var(--font-size-7);
+                line-height: 18px;
+                color: var(--p-gray);
+                font-family: var(--font-arial);
+            }
+
+        }
+
+        #testimonials {
+
+            h2 {
+                font-size: var(--font-size-3-0);
+                color: var(--font-orange);
+                font-family: var(--font-family);
+                border-bottom: 1px solid var(--border-color-3);
+                font-weight: normal;
+                margin: 10px 0;
+                padding: 10px 0;
+            }
+
+            h4 {
+                font-size: var(--font-size-7);
+                line-height: 18px;
+                color: var(--default-gray);
+                font-weight: bold;
+                font-family: var(--font-arial);
+                margin: 15px 0;
+            }
+
+            p {
+                font-size: var(--font-size-7);
+                line-height: 18px;
+                color: var(--p-gray);
+                font-family: var(--font-arial);
+            }
+
+        }
+
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+    #client-page {
+
+        header {
+            margin: 0 10px;
+        }
+
+        main {
+
+            width: 100%;
+
+            #clients #container-clients div.internal {
+                grid-row: span 4;
+                grid-column: span 4;
+                margin-bottom: 50px;
+                text-align: center;
+
+                img {
+                    border: 11px solid var(--border-color-5);
+                    border-radius: 6px;
+                    width: 500px;
+                    height: 420px;
+                }
+            }
+        }
+    }
+}

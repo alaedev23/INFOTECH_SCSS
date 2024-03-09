@@ -1,0 +1,20 @@
+#welcome {
+
+    h3 {
+        font-size: var(--font-size-2);
+        color: var(--font-orange);
+        font-family: var(--font-family);
+        border-bottom: 1px solid var(--border-color-3);
+        font-weight: 500;
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-size: var(--font-size-7);
+        line-height: 18px;
+        color: var(--p-gray);
+        font-family: var(--font-arial);
+    }
+
+}
